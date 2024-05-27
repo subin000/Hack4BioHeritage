@@ -89,6 +89,9 @@ app.post('/login', async (req, res) => {
   }
 });
 
+app.get("/",(req,res)=>{
+  console.log("server running")
+})
 
 
 const verifyToken = (req, res, next) => {
